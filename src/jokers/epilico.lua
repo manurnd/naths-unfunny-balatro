@@ -17,7 +17,7 @@ SMODS.Joker {
             end
             for k, v in ipairs(G.playing_cards) do
                 if pseudorandom('ep_burn') > 0.7 then
-                    v:set_ability("m_rndmod_wrath")
+                    v:set_ability("m_rndmod_burning")
                 end
             end
         end
