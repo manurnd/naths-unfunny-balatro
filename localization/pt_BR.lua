@@ -271,7 +271,7 @@ return {
                     "Se não há nenhuma {C:attention}Peça",
                     "{C:attention}de Xadrez{} em seu deck ao",
                     "{C:attention}final do round{}, destrói",
-                    "esse curinga e criq {C:attention}A Alma"
+                    "esse curinga e cria {C:attention}A Alma"
                 }
                 }
             },
