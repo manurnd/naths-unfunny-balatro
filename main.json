@@ -1,0 +1,10 @@
+{
+  "id": "nathrnd",
+  "name": "Nath's Unfunny Balatro",
+  "author": ["NatalielRND"],
+  "description": "It's like \"White People's Unfunny Balatro\", but I'm actually, in fact, not white, nor people.",
+  "prefix": "rndmod",
+  "main_file": "main.lua",
+  "icon_path": "icon.png",
+  "version": "0.0.1"
+}
