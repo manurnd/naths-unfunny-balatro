@@ -307,6 +307,13 @@ return {
                     }
                 },
             },
+            j_rndmod_chaos_theory={
+                name="Teoria do Caos",
+                text={
+                    "Cria {C:attention}#1#{} {C:attention}Tags{} aleatórias",
+                    "ao final de cada round",
+                },
+            },
         },
         Tarot = {
             c_rndmod_eclipse={

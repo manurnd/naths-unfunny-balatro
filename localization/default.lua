@@ -309,6 +309,13 @@ return {
                     }
                 }
             },
+            j_rndmod_chaos_theory={
+                name="Chaos Theory",
+                text={
+                    "Creates {C:attention}#1#{} random",
+                    "{C:attention}Tags{} at the end of round",
+                },
+            },
         },
         Tarot = {
             c_rndmod_eclipse={
