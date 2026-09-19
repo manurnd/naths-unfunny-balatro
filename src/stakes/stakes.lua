@@ -55,6 +55,7 @@ SMODS.Stake {
     applied_stakes = false
   },
   shiny = false,
+  colour = HEX("2596be"),
   modifiers = function()
     G.GAME.round_resets.blind_ante = 0
     G.GAME.round_resets.ante = 0
@@ -76,6 +77,7 @@ SMODS.Stake {
     applied_stakes = false
   },
   shiny = false,
+  colour = HEX("2596be"),
   modifiers = function()
     for k, v in pairs(G.P_CENTERS) do
       if pseudorandom('itaborailson') < 1/2 and k ~= "Back" and
