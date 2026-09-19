@@ -297,6 +297,13 @@ return {
                     "your deck",
                 },
             },
+            j_rndmod_quetzo={
+                name="Quetzonaga",
+                text={
+                    "Scoring {C:attention}Face Cards{}",
+                    "become {C:attention}Stone Cards{}",
+                },
+            },
         },
         Tarot = {
             c_rndmod_eclipse={

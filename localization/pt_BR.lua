@@ -295,6 +295,13 @@ return {
                     "deck",
                 },
             },
+            j_rndmod_quetzo={
+                name="Quetzonaga",
+                text={
+                    "{C:attention}Cartas de Realeza{} pontuadas",
+                    "se tornam {C:attention}Cartas de Pedra{}",
+                },
+            },
         },
         Tarot = {
             c_rndmod_eclipse={
