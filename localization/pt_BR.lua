@@ -315,7 +315,7 @@ return {
                 },
             },
             j_rndmod_ruby={
-                name="Ruby",
+                name="Rubí",
                 text={
                     "Ganha {C:mult}+#2#{} Multi",
                     "para cada carta descartada",
