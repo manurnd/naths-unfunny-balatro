@@ -316,6 +316,15 @@ return {
                     "{C:attention}Tags{} at the end of round",
                 },
             },
+            j_rndmod_ruby={
+                name="Ruby",
+                text={
+                    "Gains {C:mult}+#2#{} Mult",
+                    "for every card discarded",
+                    "Resets at the end of round",
+                    "{C:inactive}(Currently {C:mult}+#1#{C:inactive} Mult)",
+                },
+            },
         },
         Tarot = {
             c_rndmod_eclipse={

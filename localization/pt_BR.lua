@@ -314,6 +314,15 @@ return {
                     "ao final de cada round",
                 },
             },
+            j_rndmod_ruby={
+                name="Ruby",
+                text={
+                    "Ganha {C:mult}+#2#{} Multi",
+                    "para cada carta descartada",
+                    "Reseta ao final do round",
+                    "{C:inactive}(Atualmente {C:mult}+#1#{C:inactive} Multi)",
+                },
+            },
         },
         Tarot = {
             c_rndmod_eclipse={
