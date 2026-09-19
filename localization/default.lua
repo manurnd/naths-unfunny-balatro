@@ -300,9 +300,14 @@ return {
             j_rndmod_quetzo={
                 name="Quetzonaga",
                 text={
-                    "Scoring {C:attention}Face Cards{}",
-                    "become {C:attention}Stone Cards{}",
-                },
+                        {
+                        "Scoring {C:attention}Face Cards{}",
+                        "become {C:attention}Stone Cards{}",
+                    },{
+                        "Scoring {C:attention}Stone Cards{}",
+                        "give {C:mult}+#1#{} Mult",
+                    }
+                }
             },
         },
         Tarot = {
