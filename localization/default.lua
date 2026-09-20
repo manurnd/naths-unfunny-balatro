@@ -325,6 +325,13 @@ return {
                     "{C:inactive}(Currently {C:mult}+#1#{C:inactive} Mult)",
                 },
             },
+            j_rndmod_bismuth={
+                name="Bismuth",
+                text={
+                    "Gains {C:money}$#1#{} of {C:attention}sell value{}",
+                    "when a {C:attention}Wild Card{} is scored",
+                },
+            },
         },
         Tarot = {
             c_rndmod_eclipse={

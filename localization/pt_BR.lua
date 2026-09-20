@@ -323,6 +323,13 @@ return {
                     "{C:inactive}(Atualmente {C:mult}+#1#{C:inactive} Multi)",
                 },
             },
+            j_rndmod_bismuth={
+                name="Bismuto",
+                text={
+                    "Ganha {C:money}$#1#{} de {C:attention}valor de venda{}",
+                    "quando uma {C:attention}Carta Curinga{} é pontuada",
+                },
+            },
         },
         Tarot = {
             c_rndmod_eclipse={
