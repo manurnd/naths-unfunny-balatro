@@ -317,10 +317,9 @@ return {
             j_rndmod_ruby={
                 name="Rubí",
                 text={
-                    "Ganha {C:mult}+#2#{} Multi",
-                    "para cada carta descartada",
-                    "Reseta ao final do round",
-                    "{C:inactive}(Atualmente {C:mult}+#1#{C:inactive} Multi)",
+                    "Chance de {C:green}#1# em #2#{} de",
+                    "ganhar um {C:mult}Descarte{} ao",
+                    "usar um {C:mult}Descarte{}",
                 },
             },
             j_rndmod_bismuth={
@@ -328,6 +327,16 @@ return {
                 text={
                     "Ganha {C:money}$#1#{} de {C:attention}valor de venda{}",
                     "quando uma {C:attention}Carta Curinga{} é pontuada",
+                },
+            },
+            j_rndmod_paraiba={
+                name="Turmalina Paraíba",
+                text={
+                    "{C:chips}+#1#{} Fichas para",
+                    "cada mão jogada",
+                    "nesse round",
+                    "Reseta ao final do round",
+                    "{C:inactive}(Atualmente {C:chips}+#2#{C:inactive} Fichas)",
                 },
             },
         },

@@ -4,38 +4,29 @@ SMODS.Joker {
     pos = { x = 3, y = 3},
     config = {
         extra = {
-            multi = 0,
-            increment = 1,
+            dchance = 3,
         }
     },
-    rarity = 2,
+    rarity = 1,
     cost = 5,
     blueprint_compat = true,
     loc_vars = function(self, info_queue, card)
         return {
             vars = {
-                card.ability.extra.multi,
-                card.ability.extra.increment
+                G.GAME.probabilities.normal,
+                card.ability.extra.dchance
             }
         }
     end,
     calculate = function(self, card, context)
-        if context.discard then
-            card.ability.extra.multi = card.ability.extra.multi + card.ability.extra.increment
-            return {
-                extra = {focus = card, message = localize('k_upgrade_ex'), colour = G.C.MULT},
-                card = card,
-            }
-        end
-
-        if context.joker_main then
-            return {
-                mult = card.ability.extra.multi,
-            }
-        end
-
-        if context.end_of_round and context.main_eval then
-            card.ability.extra.multi = 0
+        if context.pre_discard then
+            if pseudorandom('rubyrnd'..G.GAME.round_resets.ante) < G.GAME.probabilities.normal/card.ability.extra.dchance then
+                ease_discard(1)
+                return {
+                    extra = {focus = card, message = localize('k_rnd_discard'), colour = G.C.MULT},
+                    card = card,
+                }
+            end
         end
     end
 }

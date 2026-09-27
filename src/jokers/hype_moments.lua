@@ -12,9 +12,10 @@ SMODS.Joker {
     calculate = function(self, card, context)
         if context.joker_main and (context.scoring_name == 'Five of a Kind' or
         context.scoring_name == 'Flush House' or
-        context.scoring_name == 'Flush Five') or
+        context.scoring_name == 'Flush Five' or
         context.scoring_name == 'rndmod_four_house_f'or
-        context.scoring_name == 'rndmod_six_f'and
+        context.scoring_name == 'rndmod_six_f' or
+        context.scoring_name == 'rndmod_six_oak') and
         #G.consumeables.cards + G.GAME.consumeable_buffer < G.consumeables.config.card_limit then
             SMODS.add_card({key = "c_aura"})
                 return {

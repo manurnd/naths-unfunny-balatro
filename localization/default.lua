@@ -319,10 +319,9 @@ return {
             j_rndmod_ruby={
                 name="Ruby",
                 text={
-                    "Gains {C:mult}+#2#{} Mult",
-                    "for every card discarded",
-                    "Resets at the end of round",
-                    "{C:inactive}(Currently {C:mult}+#1#{C:inactive} Mult)",
+                    "{C:green}#1# in #2#{} chance to",
+                    "gain a {C:mult}Discard{} when",
+                    "using a {C:mult}Discard{}",
                 },
             },
             j_rndmod_bismuth={
@@ -330,6 +329,16 @@ return {
                 text={
                     "Gains {C:money}$#1#{} of {C:attention}sell value{}",
                     "when a {C:attention}Wild Card{} is scored",
+                },
+            },
+            j_rndmod_paraiba={
+                name="Paraiba Tourmaline",
+                text={
+                    "{C:chips}+#1#{} Chips for",
+                    "every hand played",
+                    "this round",
+                    "Resets at the end of round",
+                    "{C:inactive}(Currently {C:chips}+#2#{C:inactive} Chips)",
                 },
             },
         },
@@ -627,6 +636,7 @@ return {
             k_plus_tag = "+ Tag",
             k_peak = "PEAK!",
             k_draw = "Draw",
+            k_rnd_discard = "+1 Discard",
         }
     },
 }

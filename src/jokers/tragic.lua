@@ -22,17 +22,5 @@ SMODS.Joker {
             G.GAME.blind:disable()
             card.ability.extra.active = false
         end
-        
-        
-        
-        --if context.setting_blind and context.blind.boss and
-        --#G.consumeables.cards + G.GAME.consumeable_buffer < G.consumeables.config.card_limit then
-            --G.GAME.consumeable_buffer = G.GAME.consumeable_buffer + 1 
-            --local wheeln = create_card('Tarot',G.consumeables, nil, nil, nil, nil, 'c_wheel_of_fortune', 'tragic')
-            --wheeln.ability.extra = 1
-            --wheeln:add_to_deck()
-            --G.consumeables:emplace(wheeln)
-            --G.GAME.consumeable_buffer = 0
-        --end
     end
 }
