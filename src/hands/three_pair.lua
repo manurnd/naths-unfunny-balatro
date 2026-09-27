@@ -13,7 +13,7 @@ return {
       { 'C_7', true },
       { 'D_7', true },
     },
-    visible = (G.GAME and G.GAME.starting_params.play_limit >= 6),
+    visible = (G.GAME and G.GAME.starting_params.play_limit >= 6) or false,
     evaluate = function(parts, hand)
         if next(parts._2) then
             if #parts._2 == 3 then return parts._all_pairs
