@@ -117,7 +117,8 @@ return {
             j_rndmod_burning_memory={
                 name="Burning Memory",
                 text={
-                    "{C:dark_edition}+#1#{} Joker Slot",
+                    {"{C:dark_edition}+#1#{} Joker Slot"},
+                    {"{C:dark_edition}???"}
                 },
             },
             j_rndmod_pope={

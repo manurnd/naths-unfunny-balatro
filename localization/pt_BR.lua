@@ -115,7 +115,8 @@ return {
             j_rndmod_burning_memory={
                 name="Memória Ardente",
                 text={
-                    "{C:dark_edition}+#1#{} espaço de Curinga",
+                    {"{C:dark_edition}+#1#{} espaço de Curinga"},
+                    {"{C:dark_edition}???"}
                 },
             },
             j_rndmod_pope={
