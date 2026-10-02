@@ -342,6 +342,15 @@ return {
                     "{C:inactive}(Currently {C:chips}+#2#{C:inactive} Chips)",
                 },
             },
+            j_rndmod_crimson={
+                name="Crimson King",
+                text={
+                    "Gains {X:mult,C:white} X#2# {} Mult when",
+                    "a {C:attention}King{} is scored",
+                    "Resets when activated",
+                    "{C:inactive}(Currently {X:mult,C:white} X#2# {C:inactive} Mult)",
+                },
+            },
         },
         Tarot = {
             c_rndmod_eclipse={

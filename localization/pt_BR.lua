@@ -340,6 +340,15 @@ return {
                     "{C:inactive}(Atualmente {C:chips}+#2#{C:inactive} Fichas)",
                 },
             },
+            j_rndmod_crimson={
+                name="Rei Carmesim",
+                text={
+                    "Ganha {X:mult,C:white} X#1# {} Multi sempre que",
+                    "um {C:attention}Rei{} é pontuado",
+                    "Reseta quando ativado",
+                    "{C:inactive}(Atualmente {X:mult,C:white} X#2# {C:inactive} Multi)",
+                },
+            },
         },
         Tarot = {
             c_rndmod_eclipse={
