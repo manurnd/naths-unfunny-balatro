@@ -429,7 +429,7 @@ return {
                     "Levels up the",
                     "last played",
                     "poker hand",
-                    "twice"
+                    "by {C:attention}#1#{} level",
                 },
             },
             c_rndmod_aqua_e = {

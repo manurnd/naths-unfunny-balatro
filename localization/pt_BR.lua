@@ -426,7 +426,7 @@ return {
                 text={
                     "Sobe o nível",
                     "da última mão de poker",
-                    "jogada duas vezes",
+                    "jogada em {C:attention}#1#{} nível",
                 },
             },
             c_rndmod_aqua_e = {

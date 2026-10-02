@@ -3,9 +3,9 @@ SMODS.Consumable {
   atlas = "rncons",
   pos = {x = 8, y = 0},
   set = 'Planet',
-  cost = 4,
+  cost = 3,
   config = {
-    extra = {hands = 2}
+    extra = {hands = 1}
   },
   can_use = function(self, card)
     if G.GAME.last_hand_played then return true
@@ -13,8 +13,7 @@ SMODS.Consumable {
   end,
   loc_vars = function(self, info_queue, card)
     return {
-      vars =
-      {
+      vars = {
         card.ability.extra.hands,
       },
     }
