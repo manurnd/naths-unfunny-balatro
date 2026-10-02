@@ -3,7 +3,7 @@
 <p>Just a little mod for Balatro that I've decided to spend some of my free time into.</p><hr>
 <p>This mod currently adds:</p>
 <ul>
-  <li>29 New Jokers</li>
+  <li>36 New Jokers</li>
   <li>6 New Tarot Cards</li>
   <li>7 New Planets</li>
   <li>4 New Enhancements</li>
