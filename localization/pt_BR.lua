@@ -26,6 +26,15 @@ return {
                     "banidos da loja",
                 },
             },
+            b_rndmod_coffee = {
+                name = "Baralho de Café",
+                text = {
+                    "Ganha {X:mult,C:white} X0.05 {} Multi",
+                    "quando você joga uma mão diferente",
+                    "da última mão jogada,",
+                    "caso contrário, perde {X:mult,C:white} X0.5 {} Multi",
+                },
+            },
         },
         Joker = {
             j_rndmod_modern_hermit = {
@@ -205,12 +214,15 @@ return {
             j_rndmod_grandiose={
                 name="Grandioso",
                 text={
-                    "Ganhe {C:money}${} igual ao",
-                    "{C:money}valor de venda{} do último",
-                    "{C:attention}Curinga{} vendido",
-                    "ao final do round",
-                    "Vender curingas não dá {C:money}${}",
-                    "{C:inactive}(Atualmente {C:money}$#1#{C:inactive})"
+                    {
+                        "No final do round,",
+                        "ganha {C:money}${} igual ao",
+                        "valor de venda do último",
+                        "{C:attention}Curinga{} vendido",
+                        "{C:inactive}(Atualmente {C:money}$#1#{C:inactive})"
+                    },{
+                        "Vender curingas não dá {C:money}${}",
+                    }
                 }
             },
             j_rndmod_doublet={
@@ -224,7 +236,7 @@ return {
                 }
             },
             j_rndmod_bricks={
-                name="Tijolonho Por Tijolinho",
+                name="Tijolinho Por Tijolinho",
                 text={
                     "Compre {C:attention}#1#{} cartas adicionais",
                     "se a mão jogada contém",

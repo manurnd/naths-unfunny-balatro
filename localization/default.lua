@@ -26,6 +26,15 @@ return {
                     "banned from the shop",
                 },
             },
+            b_rndmod_coffee = {
+                name = "Coffee Deck",
+                text = {
+                    "Gains {X:mult,C:white} X0.05 {} Mult",
+                    "when you play a hand different",
+                    "from the last played hand,",
+                    "else, loses {X:mult,C:white} X0.5 {} Mult",
+                },
+            },
         },
         Joker = {
             j_rndmod_modern_hermit = {
@@ -207,12 +216,15 @@ return {
             j_rndmod_grandiose={
                 name="Grandiose",
                 text={
-                    "Earn {C:money}${} equal to",
-                    "the {C:money}sell value{} of the",
-                    "last {C:attention}Joker{} sold",
-                    "at the end of round",
-                    "Selling jokers gives no {C:money}${}",
-                    "{C:inactive}(Currently {C:money}$#1#{C:inactive})"
+                    {
+                        "At the end of round,",
+                        "earn {C:money}${} equal to",
+                        "the {C:money}sell value{} of the",
+                        "last {C:attention}Joker{} sold",
+                        "{C:inactive}(Currently {C:money}$#1#{C:inactive})"
+                    },{
+                        "Selling jokers gives no {C:money}${}",
+                    }
                 }
             },
             j_rndmod_doublet={

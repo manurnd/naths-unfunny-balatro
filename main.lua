@@ -74,3 +74,10 @@ local hand_src = SMODS.NFS.getDirectoryItems(SMODS.current_mod.path .. "src/hand
 for _, file in ipairs(hand_src) do
     assert(SMODS.load_file("src/hands/" .. file))()
 end
+
+SMODS.current_mod.menu_cards = function()
+    return {
+        remove_original = true,
+        {key = 'j_rndmod_dream_catcher'},
+    }
+end
