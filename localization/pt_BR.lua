@@ -29,10 +29,9 @@ return {
             b_rndmod_coffee = {
                 name = "Baralho de Café",
                 text = {
-                    "Ganha {X:mult,C:white} X0.05 {} Multi",
-                    "quando você joga uma mão diferente",
-                    "da última mão jogada,",
-                    "caso contrário, perde {X:mult,C:white} X0.5 {} Multi",
+                    "Ao usar um {C:attention}Consumível{}",
+                    "há uma chance de {C:green}#1# em #2#{}",
+                    "de ganhar uma cópia dele"
                 },
             },
         },
@@ -85,8 +84,14 @@ return {
             j_rndmod_cashback={
                 name="Cashback",
                 text={
-                    "Ganhe {C:money}$#1#{} ao pular",
-                    "um {C:attention}Pacote de Reforço{}",
+                    {
+                        "Ganhe {C:money}$#1#{} ao abrir",
+                        "um {C:attention}Pacote de Reforço{}",
+                    },
+                    {
+                        "Ganhe {C:money}$#1#{} ao pular",
+                        "um {C:attention}Pacote de Reforço{}",
+                    }
                 }
             },
             j_rndmod_jack_all={

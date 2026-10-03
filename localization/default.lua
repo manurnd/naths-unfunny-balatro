@@ -29,10 +29,9 @@ return {
             b_rndmod_coffee = {
                 name = "Coffee Deck",
                 text = {
-                    "Gains {X:mult,C:white} X0.05 {} Mult",
-                    "when you play a hand different",
-                    "from the last played hand,",
-                    "else, loses {X:mult,C:white} X0.5 {} Mult",
+                    "When using a {C:attention}Consumeable{}",
+                    "there is a {C:green}#1# in #2#{} chance of",
+                    "gaining a copy of it"
                 },
             },
         },
@@ -87,8 +86,14 @@ return {
             j_rndmod_cashback={
                 name="Cashback",
                 text={
-                    "Earn {C:money}$#1#{} when skipping",
-                    "a {C:attention}Booster Pack{}",
+                    {
+                        "Earn {C:money}$#1#{} when opening",
+                        "a {C:attention}Booster Pack{}",
+                    },
+                    {
+                        "Earn {C:money}$#1#{} when skipping",
+                        "a {C:attention}Booster Pack{}",
+                    }
                 }
             },
             j_rndmod_jack_all={

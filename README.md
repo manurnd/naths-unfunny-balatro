@@ -8,7 +8,7 @@
   <li>7 New Planets</li>
   <li>4 New Enhancements</li>
   <li>6 New Seals</li>
-  <li>3 New Decks</li>
+  <li>4 New Decks</li>
   <li>4 New Stakes</li>
   <li>6 New Hand Types</li>
 </ul>

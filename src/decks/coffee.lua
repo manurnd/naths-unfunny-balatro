@@ -3,11 +3,8 @@ SMODS.Back {
     atlas = "rndecks",
     pos = { x = 4, y = 0 },
     config = {
-        xmult = 1.0,
-        extra = {
-            increase = 0.05,
-            decrease = 0.5,
-            last = ""
+       extra = {
+           chance = 4
         }
     },
     unlocked = false,
@@ -19,25 +16,21 @@ SMODS.Back {
             end
         end
     end,
+
+    loc_vars = function(self, info_queue, back)
+        return {
+            vars = { G.GAME.probabilities.normal, self.config.extra.chance }
+        }
+    end,
+
     apply = function(self)
     end,
     
     calculate = function(self, back, context)
-        if context.before then
-            if (context.scoring_name == back.effect.config.extra.last) then
-                back.effect.config.xmult = math.max(1, back.effect.config.xmult - back.effect.config.extra.decrease)
+         if context.using_consumeable then
+            if pseudorandom('coffeeD'..G.GAME.round_resets.ante) < G.GAME.probabilities.normal/back.effect.config.extra.chance then
+            SMODS.add_card({key = context.consumeable.config.center_key})
             end
-            if not (context.scoring_name == back.effect.config.extra.last) then
-                back.effect.config.xmult = back.effect.config.xmult + back.effect.config.extra.increase
-            end
-            back.effect.config.extra.last = context.scoring_name
-        end
-
-
-        if context.final_scoring_step then
-            return {
-                xmult = back.effect.config.xmult
-            }
-        end
+         end
     end
 }
