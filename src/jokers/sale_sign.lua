@@ -4,10 +4,10 @@ SMODS.Joker {
     pos = { x = 4, y = 1 },
     config = {
         extra = {
-            less = 1,
+            less = 2,
         }
     },
-    rarity = 1,
+    rarity = 2,
     cost = 5,
     blueprint_compat = false,
     loc_vars = function(self, info_queue, card)

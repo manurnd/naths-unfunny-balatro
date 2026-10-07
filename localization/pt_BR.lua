@@ -182,7 +182,7 @@ return {
                 },
             },
             j_rndmod_scorching={
-                name="Scorching Waves",
+                name="Ondas Escaldantes",
                 text={
                     "{C:attention}Cartas Em Chamas{} Ganham",
                     "{C:mult}+#1#{} Multi e são",
@@ -241,7 +241,7 @@ return {
                 }
             },
             j_rndmod_bricks={
-                name="Tijolinho Por Tijolinho",
+                name="Tijolo Por Tijolo",
                 text={
                     "Compre {C:attention}#1#{} cartas adicionais",
                     "se a mão jogada contém",
@@ -279,7 +279,7 @@ return {
                 },
             },
             j_rndmod_slingshot={
-                name="Nataliel's Slingshot",
+                name="Estilingue da Nataliel",
                 text={
                     {
                     "Quando comprado, adiciona 16 cartas",
@@ -484,7 +484,7 @@ return {
             },
         },
         Enhanced = {
-            j_rndmod_burning={
+            m_rndmod_burning={
                 name="Carta Em Chamas",
                 text={
                     "{C:mult}+#1#{} Multi",
