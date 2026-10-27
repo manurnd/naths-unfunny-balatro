@@ -12,16 +12,24 @@ SMODS.Joker {
     cost = 5,
     blueprint_compat = true,
     loc_vars = function(self, info_queue, card)
+        local modifier = 0
+        if next(SMODS.find_card("v_crystal_ball")) then
+            modifier = 15
+        end
         return {
             vars = {
-                card.ability.extra.increase,
+                card.ability.extra.increase+modifier,
                 card.ability.extra.chips,
             }
         }
     end,
     calculate = function(self, card, context)
+        local modifier = 0
+        if next(SMODS.find_card("v_crystal_ball")) then
+            modifier = 15
+        end
         if context.joker_main then
-            card.ability.extra.chips = card.ability.extra.chips + card.ability.extra.increase
+            card.ability.extra.chips = card.ability.extra.chips + card.ability.extra.increase + modifier
             return {
                 chips = card.ability.extra.chips,
             }

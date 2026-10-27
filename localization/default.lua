@@ -336,28 +336,37 @@ return {
             },
             j_rndmod_ruby={
                 name="Ruby",
-                text={
+                text={{
                     "{C:green}#1# in #2#{} chance to",
                     "gain a {C:mult}Discard{} when",
                     "using a {C:mult}Discard{}",
-                },
+                },{
+                    "{C:green}+1/+1{} chance if you own ",
+                    "{C:attention}Crystal Ball{} voucher",
+                }}
             },
             j_rndmod_bismuth={
                 name="Bismuth",
-                text={
+                text={{
                     "Gains {C:money}$#1#{} of {C:attention}sell value{}",
                     "when a {C:attention}Wild Card{} is scored",
-                },
+                },{
+                    "{X:money,C:white} X2 {} gain if you own ",
+                    "{C:attention}Crystal Ball{} voucher",
+                }}
             },
             j_rndmod_paraiba={
                 name="Paraiba Tourmaline",
-                text={
+                text={{
                     "{C:chips}+#1#{} Chips for",
                     "every hand played",
                     "this round",
                     "Resets at the end of round",
                     "{C:inactive}(Currently {C:chips}+#2#{C:inactive} Chips)",
-                },
+                },{
+                    "Extra {C:chips}+15{} Chips if you own ",
+                    "{C:attention}Crystal Ball{} voucher",
+                }}
             },
             j_rndmod_crimson={
                 name="Crimson King",
@@ -371,10 +380,16 @@ return {
             j_rndmod_amethyst={
                 name="Amethyst",
                 text={
-                    "{C:green}#1# in #2#{} chance to",
-                    "to gain a copy of a {C:tarot}Tarot{}",
-                    "when it`s used"
-                },
+                    {
+                        "{C:green}#1# in #2#{} chance to",
+                        "to gain a copy of a {C:tarot}Tarot{}",
+                        "when it`s used"
+                    },{
+                        "{X:green,C:white} X2 {} chance if you own ",
+                        "{C:attention}Crystal Ball{} voucher",
+
+                    }
+                }
             },
         },
         Tarot = {

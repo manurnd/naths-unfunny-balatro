@@ -11,16 +11,24 @@ SMODS.Joker {
     cost = 5,
     blueprint_compat = true,
     loc_vars = function(self, info_queue, card)
+        local modifier = 0
+        if next(SMODS.find_card("v_crystal_ball")) then
+            modifier = 1
+        end
         return {
             vars = {
-                G.GAME.probabilities.normal,
-                card.ability.extra.dchance
+                G.GAME.probabilities.normal+modifier,
+                card.ability.extra.dchance + modifier
             }
         }
     end,
     calculate = function(self, card, context)
+        local modifier = 0
+        if next(SMODS.find_card("v_crystal_ball")) then
+            modifier = 1
+        end
         if context.pre_discard then
-            if pseudorandom('rubyrnd'..G.GAME.round_resets.ante) < G.GAME.probabilities.normal/card.ability.extra.dchance then
+            if pseudorandom('rubyrnd'..G.GAME.round_resets.ante) < (G.GAME.probabilities.normal+modifier)/(card.ability.extra.dchance+modifier) then
                 ease_discard(1)
                 return {
                     extra = {focus = card, message = localize('k_rnd_discard'), colour = G.C.MULT},

@@ -334,28 +334,37 @@ return {
             },
             j_rndmod_ruby={
                 name="Rubí",
-                text={
+                text={{
                     "Chance de {C:green}#1# em #2#{} de",
                     "ganhar um {C:mult}Descarte{} ao",
                     "usar um {C:mult}Descarte{}",
-                },
+                },{
+                    "Chance {C:green}+1/+1{} se você",
+                    "possuir o voucher {C:attention}Bola de Cristal{}"
+                }}
             },
             j_rndmod_bismuth={
                 name="Bismuto",
-                text={
+                text={{
                     "Ganha {C:money}$#1#{} de {C:attention}valor de venda{}",
                     "quando uma {C:attention}Carta Curinga{} é pontuada",
-                },
+                },{
+                    "{X:money,C:white} X2 {} ganho se você possuir",
+                    "o voucher {C:attention}Bola de Cristal{}"
+                }}
             },
             j_rndmod_paraiba={
                 name="Turmalina Paraíba",
-                text={
+                text={{
                     "{C:chips}+#1#{} Fichas para",
                     "cada mão jogada",
                     "nesse round",
                     "Reseta ao final do round",
                     "{C:inactive}(Atualmente {C:chips}+#2#{C:inactive} Fichas)",
-                },
+                },{
+                    "{C:chips}+15{} Fichas extra se você possuir",
+                    "o voucher {C:attention}Bola de Cristal{}"
+                }}
             },
             j_rndmod_crimson={
                 name="Rei Carmesim",
@@ -369,10 +378,15 @@ return {
             j_rndmod_amethyst={
                 name="Ametista",
                 text={
-                    "Chance de {C:green}#1# em #2#{} de",
-                    "ganhar uma cópia de um {C:tarot}Tarot{}",
-                    "quando ela é usada"
-                },
+                    {
+                        "Chance de {C:green}#1# em #2#{} de",
+                        "ganhar uma cópia de um {C:tarot}Tarot{}",
+                        "quando ela é usada"
+                    },{
+                        "{X:green,C:white} X2 {} chance se você",
+                        "possuir o voucher {C:attention}Bola de Cristal{}"
+                    }
+                }
             },
         },
         Tarot = {
