@@ -6,7 +6,7 @@ SMODS.Enhancement {
       p_dollars = 0,
         extra = {
             gain = 1,
-            destroy = 5
+            destroy = 6
         }
     },
     loc_vars = function(self, info_queue, card)

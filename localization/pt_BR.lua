@@ -366,6 +366,14 @@ return {
                     "{C:inactive}(Atualmente {X:mult,C:white} X#2# {C:inactive} Multi)",
                 },
             },
+            j_rndmod_amethyst={
+                name="Ametista",
+                text={
+                    "Chance de {C:green}#1# em #2#{} de",
+                    "ganhar uma cópia de um {C:tarot}Tarot{}",
+                    "quando ela é usada"
+                },
+            },
         },
         Tarot = {
             c_rndmod_eclipse={
