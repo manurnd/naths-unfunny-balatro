@@ -58,8 +58,12 @@ SMODS.Stake {
   colour = HEX("2596be"),
   modifiers = function()
     G.GAME.round_resets.blind_ante = 0
-    G.GAME.round_resets.ante = 0
-    
+    G.GAME.round_resets.ante = 0  
+  end,
+  calculate = function(self, context)
+    if context.setting_blind and G.GAME.round == 1 then
+       G.hand:change_size(-1) 
+    end
   end
 }
 
@@ -79,7 +83,13 @@ SMODS.Stake {
   shiny = false,
   colour = HEX("2596be"),
   modifiers = function()
-    for k, v in pairs(G.P_CENTERS) do
+    for k, v in pairs(G.P_CENTER_POOLS.Consumeables) do
+      if pseudorandom('itaborailson') < 1/2 and k ~= "Back" and
+      k ~= "Edition" and k ~= "Enhanced" and k ~= "Default" then
+        G.GAME.banned_keys[k] = true
+      end
+    end
+    for k, v in pairs(G.P_CENTER_POOLS.Joker) do
       if pseudorandom('itaborailson') < 1/2 and k ~= "Back" and
       k ~= "Edition" and k ~= "Enhanced" and k ~= "Default" then
         G.GAME.banned_keys[k] = true

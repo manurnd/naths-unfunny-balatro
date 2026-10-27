@@ -537,6 +537,7 @@ return {
                 name="Aposta Anciã",
                 text={
                     "Comece na {C:attention}Ante 0{}",
+                    "Tamanho da mão {C:attention}-1{}",
                 },
             },
             stake_rndmod_4itaborailson={

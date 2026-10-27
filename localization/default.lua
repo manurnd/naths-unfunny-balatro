@@ -539,7 +539,8 @@ return {
             stake_rndmod_3ancient={
                 name="Ancient Stake",
                 text={
-                    "Start in {C:attention}Ante 0{}",
+                    "Start on {C:attention}Ante 0{}",
+                    "{C:attention}-1{} hand size",
                 },
             },
             stake_rndmod_4itaborailson={
