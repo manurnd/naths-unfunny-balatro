@@ -137,13 +137,17 @@ return {
             },
             j_rndmod_pope={
                 name="The Pope Is Pop",
-                text={
-                    "If you have {C:tarot}The Hierophant",
-                    "in your consumables when",
-                    "{C:attention}Blind{} is selected, destroy",
-                    "it and gain {X:mult,C:white} X#2# {} Mult",
-                    "{C:inactive}(Currently {X:mult,C:white} X#1# {C:inactive} Mult)",
-                },
+                text={{
+                        "If you have {C:tarot}The Hierophant",
+                        "in your consumables when",
+                        "{C:attention}Blind{} is selected, destroy",
+                        "it and gain {X:mult,C:white} X#2# {} Mult",
+                        "{C:inactive}(Currently {X:mult,C:white} X#1# {C:inactive} Mult)",
+                    },{
+                        "{C:tarot}The High Priestess{} also triggers",
+                        "this effect if you own ",
+                        "{C:attention}Tarot Merchant{} voucher",
+                    }}
             },
             j_rndmod_hype_moments={
                 name="Hype Moments",
@@ -155,10 +159,13 @@ return {
             },
             j_rndmod_pulling_force={
                 name="Pulling Force",
-                text={
-                    "Draw #1# extra cards",
+                text={{
+                    "Draw {C:attention}#1#{} extra cards",
                     "on first draw of round"
-                },
+                },{
+                    "Draw {C:attention}+1{}extra card if you own",
+                    "{C:attention}Paint Brush{} voucher"
+                }},
             },
             j_rndmod_sale_sign={
                 name="Sale Sign",

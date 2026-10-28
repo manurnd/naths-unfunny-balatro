@@ -135,13 +135,17 @@ return {
             },
             j_rndmod_pope={
                 name="O Papa É Pop",
-                text={
-                    "Se você tem {C:tarot}O Hierofante",
-                    "em seus consumíveis quando o",
-                    "{C:attention}Blind{} é selecionado, este curinga",
-                    "o destrói e ganha {X:mult,C:white} X#2# {} Multi",
-                    "{C:inactive}(Atualmente {X:mult,C:white} X#1# {C:inactive} Multi)",
-                },
+                text={{
+                        "Se você tem {C:tarot}O Hierofante",
+                        "em seus consumíveis quando o",
+                        "{C:attention}Blind{} é selecionado, este curinga",
+                        "o destrói e ganha {X:mult,C:white} X#2# {} Multi",
+                        "{C:inactive}(Atualmente {X:mult,C:white} X#1# {C:inactive} Multi)",
+                    },{
+                        "{C:tarot}A Sacerdotisa{} também",
+                        "ativa esse efeito se você",
+                        "possuir o voucher {C:attention}Comerciante de Tarô{}",
+                    }}
             },
             j_rndmod_hype_moments={
                 name="Momentos Hype",
@@ -153,10 +157,13 @@ return {
             },
             j_rndmod_pulling_force={
                 name="Força De Tração",
-                text={
-                    "Compre #1# cartas extras",
-                    "ao puxar a primeira mão do round"
-                },
+                text={{
+                        "Compre {C:attention}#1#{}cartas extras",
+                        "ao puxar a primeira mão do round"
+                    },{
+                        "Compre {C:attention}+1{} carta extra se você possuir",
+                        "o voucher {C:attention}Pincel{}"
+                    }}
             },
             j_rndmod_sale_sign={
                 name="Promoção",

@@ -29,6 +29,14 @@ SMODS.Joker {
                 hieros_kd = hieros_kd + 1
                 card.ability.extra.xMult = card.ability.extra.xMult + card.ability.extra.gain
             end
+
+            if next(SMODS.find_card("v_tarot_merchant")) then
+                for _, priest in ipairs(SMODS.find_card("c_high_priestess")) do
+                    SMODS.destroy_cards(priest)
+                    hieros_kd = hieros_kd + 1
+                    card.ability.extra.xMult = card.ability.extra.xMult + card.ability.extra.gain
+                end
+            end
             if hieros_kd > 0 then
                 return {
                     extra = {focus = card, message = localize('k_upgrade_ex'), colour = G.C.MULT},
