@@ -30,7 +30,7 @@ SMODS.Joker {
                 card.ability.extra.xMult = card.ability.extra.xMult + card.ability.extra.gain
             end
 
-            if next(SMODS.find_card("v_tarot_merchant")) then
+            if next(SMODS.find_card("v_tarot_merchant")) or next(SMODS.find_card("j_rndmod_voucher")) then
                 for _, priest in ipairs(SMODS.find_card("c_high_priestess")) do
                     SMODS.destroy_cards(priest)
                     hieros_kd = hieros_kd + 1

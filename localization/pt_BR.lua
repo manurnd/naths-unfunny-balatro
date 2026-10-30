@@ -158,7 +158,7 @@ return {
             j_rndmod_pulling_force={
                 name="Força De Tração",
                 text={{
-                        "Compre {C:attention}#1#{}cartas extras",
+                        "Compre {C:attention}#1#{} cartas extras",
                         "ao puxar a primeira mão do round"
                     },{
                         "Compre {C:attention}+1{} carta extra se você possuir",
@@ -394,6 +394,14 @@ return {
                         "possuir o voucher {C:attention}Bola de Cristal{}"
                     }
                 }
+            },
+            j_rndmod_voucher={
+                name="Cupom Curinga",
+                text={
+                    "Curingas que são melhorados por",
+                    "{C:attention}Vouchers{} têm seus",
+                    "requisitos cumpridos",
+                },
             },
         },
         Tarot = {

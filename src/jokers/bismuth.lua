@@ -12,7 +12,7 @@ SMODS.Joker {
     blueprint_compat = false,
     loc_vars = function(self, info_queue, card)
         local modifier = 0
-        if next(SMODS.find_card("v_crystal_ball")) then
+        if next(SMODS.find_card("v_crystal_ball")) or next(SMODS.find_card("j_rndmod_voucher")) then
             modifier = 2
         end
         info_queue[#info_queue+1] = G.P_CENTERS.m_wild
@@ -24,7 +24,7 @@ SMODS.Joker {
     end,
     calculate = function(self, card, context)
         local modifier = 0
-        if next(SMODS.find_card("v_crystal_ball")) then
+        if next(SMODS.find_card("v_crystal_ball")) or next(SMODS.find_card("j_rndmod_voucher")) then
             modifier = 2
         end
         if context.individual and context.other_card.ability.name == "Wild Card" then

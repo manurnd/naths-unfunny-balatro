@@ -19,7 +19,7 @@ SMODS.Joker {
     calculate = function(self, card, context)
         if context.first_hand_drawn then
             local extras = 0
-            if next(SMODS.find_card("v_paint_brush")) then extras = 1 end
+            if next(SMODS.find_card("v_paint_brush")) or next(SMODS.find_card("j_rndmod_voucher")) then extras = 1 end
             SMODS.draw_cards(card.ability.extra.cards + extras)
         end
     end

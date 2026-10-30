@@ -163,7 +163,7 @@ return {
                     "Draw {C:attention}#1#{} extra cards",
                     "on first draw of round"
                 },{
-                    "Draw {C:attention}+1{}extra card if you own",
+                    "Draw {C:attention}+1{} extra card if you own",
                     "{C:attention}Paint Brush{} voucher"
                 }},
             },
@@ -397,6 +397,14 @@ return {
 
                     }
                 }
+            },
+            j_rndmod_voucher={
+                name="Voucher Joker",
+                text={
+                    "Jokers that are upgraded by",
+                    "{C:attention}Vouchers{} have their",
+                    "requirements fulfilled",
+                },
             },
         },
         Tarot = {

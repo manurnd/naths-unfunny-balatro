@@ -12,7 +12,7 @@ SMODS.Joker {
     blueprint_compat = false,
     loc_vars = function(self, info_queue, card)
         local modifier = 0
-        if next(SMODS.find_card("v_crystal_ball")) then
+        if next(SMODS.find_card("v_crystal_ball")) or next(SMODS.find_card("j_rndmod_voucher")) then
             modifier = 2
         end
          return {
@@ -21,7 +21,7 @@ SMODS.Joker {
     end,
     calculate = function(self, card, context)
          local modifier = 0
-        if next(SMODS.find_card("v_crystal_ball")) then
+        if next(SMODS.find_card("v_crystal_ball")) or next(SMODS.find_card("j_rndmod_voucher")) then
             modifier = 2
         end
         if context.using_consumeable and context.consumeable.ability.set == "Tarot" then
