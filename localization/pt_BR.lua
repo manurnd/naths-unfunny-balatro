@@ -99,7 +99,7 @@ return {
                 text={
                     "Chance de {C:green}#1# em #2#{} de cada",
                     "{C:attention}Valete{} jogado criar",
-                    "uma {C:mult}Tag{} quando pontuado",
+                    "uma {C:mult}Marca{} quando pontuado",
                 },
             },
             j_rndmod_spam={
@@ -217,11 +217,15 @@ return {
             },
             j_rndmod_geuse={
                 name="Geuse",
-                text={
+                text={{
                     "Sobe o nível de uma mão",
                     "aleatória quando um {C:planet}Planeta{}",
                     "é usado",
-                },
+                },{
+                    "Sobe o nível de uma segunda mão",
+                    "aleatória se você possuir o voucher",
+                    "{C:attention}Telescópio{}",
+                }}
             },
             j_rndmod_grandiose={
                 name="Grandioso",
@@ -335,7 +339,7 @@ return {
             j_rndmod_chaos_theory={
                 name="Teoria do Caos",
                 text={
-                    "Cria {C:attention}#1#{} {C:attention}Tags{} aleatórias",
+                    "Cria {C:attention}#1#{} {C:attention}Marcas{} aleatórias",
                     "ao final de cada round",
                 },
             },

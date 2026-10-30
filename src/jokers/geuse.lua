@@ -18,6 +18,10 @@ SMODS.Joker {
             end
             local Chosen = pseudorandom_element(UnlockedHands, pseudoseed('geuse'..G.GAME.round_resets.ante))
             SMODS.upgrade_poker_hands({hands = Chosen, level_up = 1, from = card})
+            if next(SMODS.find_card("v_telescope")) or next(SMODS.find_card("j_rndmod_voucher")) then
+                local Chosen = pseudorandom_element(UnlockedHands, pseudoseed('geuse'..G.GAME.round_resets.ante))
+                SMODS.upgrade_poker_hands({hands = Chosen, level_up = 1, from = card})
+            end
         end
     end
 }

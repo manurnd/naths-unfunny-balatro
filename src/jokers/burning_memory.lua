@@ -18,4 +18,9 @@ SMODS.Joker {
             }
         }
     end,
+    calculate = function(self, card, context)
+        if context.joker_main and (next(SMODS.find_card("v_blank")) or next(SMODS.find_card("j_rndmod_voucher"))) then
+            return {chips = math.random(0, 9)}
+        end
+    end
 }

@@ -219,11 +219,15 @@ return {
             },
             j_rndmod_geuse={
                 name="Geuse",
-                text={
-                    "Level up a random hand",
-                    "when a {C:planet}Planet{}",
-                    "card is used",
-                },
+                text={{
+                        "Level up a random hand",
+                        "when a {C:planet}Planet{}",
+                        "card is used",
+                    },{
+                        "Level up a second random hand",
+                        "if you own {C:attention}Telescope{}",
+                        "voucher",
+                    }}
             },
             j_rndmod_grandiose={
                 name="Grandiose",
