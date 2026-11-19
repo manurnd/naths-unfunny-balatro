@@ -719,7 +719,7 @@ return {
         },
         dictionary = {
             k_plus_hermit = "+ Eremita",
-            k_plus_tag = "+ Tag",
+            k_plus_tag = "+ Marca",
             k_peak = "PEAK!",
             k_draw = "Compra",
         }
