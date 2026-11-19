@@ -23,7 +23,7 @@ SMODS.Joker {
         }
     end,
     calculate = function(self, card, context)
-        local modifier = 0
+        local modifier = 1
         if next(SMODS.find_card("v_crystal_ball")) or next(SMODS.find_card("j_rndmod_voucher")) then
             modifier = 2
         end

@@ -35,8 +35,7 @@ SMODS.Stake {
   colour = HEX("0000ff"),
   calculate = function(self, context)
     if context.setting_blind and G.GAME.round == 1 then
-      G.GAME.current_round.reroll_cost = G.GAME.current_round.reroll_cost + 2
-      G.GAME.round_resets.reroll_cost = G.GAME.round_resets.reroll_cost + 2
+      G.GAME.current_round.reroll_cost_increase = (G.GAME.current_round.reroll_cost_increase or 0) + 2
     end
   end
 }
