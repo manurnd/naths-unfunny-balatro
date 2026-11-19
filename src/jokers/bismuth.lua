@@ -11,7 +11,7 @@ SMODS.Joker {
     cost = 5,
     blueprint_compat = false,
     loc_vars = function(self, info_queue, card)
-        local modifier = 0
+        local modifier = 1
         if next(SMODS.find_card("v_crystal_ball")) or next(SMODS.find_card("j_rndmod_voucher")) then
             modifier = 2
         end
