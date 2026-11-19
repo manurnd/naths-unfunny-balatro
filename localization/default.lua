@@ -295,7 +295,7 @@ return {
                 name="Nataliel's Slingshot",
                 text={
                     {
-                    "When purchased, adds 16 cards",
+                    "When purchased, adds 12 cards",
                     "with {C:attention}Chess Pieces{} assigned",
                     "to them to your deck"
                 },{
@@ -308,7 +308,7 @@ return {
             },
             j_rndmod_foresight={
                 name="Foresight",
-                text={
+                text={{
                     "The next 5 cards",
                     "in deck are:",
                     "{C:purple}#1#",
@@ -316,7 +316,12 @@ return {
                     "{C:purple}#3#",
                     "{C:purple}#4#",
                     "{C:purple}#5#",
-                },
+                },{
+                    "{C:purple}#6#",
+                    "{C:purple}#7#",
+                    "If you own",
+                    "{C:attention}Crystal Ball{} voucher",
+                }}
             },
             j_rndmod_epilico={
                 name="Epilico",
@@ -409,6 +414,13 @@ return {
                     "{C:attention}Vouchers{} have their",
                     "requirements fulfilled",
                 },
+            },
+            j_rndmod_jackpot={
+                name="Jackpot",
+                text={
+                    "Gain {C:money}$#1#{} if the scoring hand",
+                    "contains {C:attention}3 7s{}",
+                }
             },
         },
         Tarot = {
@@ -593,6 +605,14 @@ return {
             },
         },
         Other = {
+            rndmod_tip_burn = {
+                name = "Burn",
+                text = {
+                    "Destroy {C:green}40%{} of your deck",
+                    "Turn {C:green}30%{} of remaining cards into",
+                    "{C:attention}Burning Cards{}",
+                }
+            },
             rndmod_pawn_seal = {
                 name = 'Pawn',
                 text = {

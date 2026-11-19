@@ -13,7 +13,6 @@ SMODS.Joker {
     add_to_deck = function(self, card, from_debuff)
         if from_debuff then return end
         local seas = {"rndmod_pawn","rndmod_pawn","rndmod_pawn","rndmod_pawn",
-            "rndmod_pawn","rndmod_pawn","rndmod_pawn","rndmod_pawn",
             "rndmod_knight", "rndmod_rook", "rndmod_bishop",
             "rndmod_knight", "rndmod_rook", "rndmod_bishop",
             "rndmod_queen", "rndmod_king"}

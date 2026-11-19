@@ -293,7 +293,7 @@ return {
                 name="Estilingue da Nataliel",
                 text={
                     {
-                    "Quando comprado, adiciona 16 cartas",
+                    "Quando comprado, adiciona 12 cartas",
                     "com {C:attention}Peças de Xadrez{} nelas",
                         "ao seu deck"
                 },{
@@ -306,7 +306,7 @@ return {
             },
             j_rndmod_foresight={
                 name="Previsão",
-                text={
+                text={{
                     "As próximas 5 cartas",
                     "do deck são:",
                     "{C:purple}#1#",
@@ -314,7 +314,12 @@ return {
                     "{C:purple}#3#",
                     "{C:purple}#4#",
                     "{C:purple}#5#",
-                },
+                },{
+                    "{C:purple}#6#",
+                    "{C:purple}#7#",
+                    "Se você possuir o voucher",
+                    "{C:attention}Bola de Cristal{}",
+                }}
             },
             j_rndmod_epilico={
                 name="Epílico",
@@ -406,6 +411,13 @@ return {
                     "{C:attention}Vouchers{} têm seus",
                     "requisitos cumpridos",
                 },
+            },
+            j_rndmod_jackpot={
+                name="Jackpot",
+                text={
+                    "Ganhe {C:money}$#1#{} se a mão",
+                    "pontuada contém {C:attention}3 7s{}",
+                }
             },
         },
         Tarot = {
@@ -589,6 +601,14 @@ return {
             },
         },
         Other = {
+            rndmod_tip_burn = {
+                name = "Queimar",
+                text = {
+                    "Destrói {C:green}40%{} do seu deck",
+                    "Transforma {C:green}30%{} das cartas restantes em",
+                    "{C:attention}Cartas Em Chamas{}",
+                }
+            },
             rndmod_pawn_seal = {
                 name = 'Peão',
                 text = {
