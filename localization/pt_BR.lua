@@ -416,7 +416,7 @@ return {
                 name="Jackpot",
                 text={
                     "Ganhe {C:money}$#1#{} se a mão",
-                    "pontuada contém {C:attention}3 7s{}",
+                    "pontuada contém 3 {C:attention}7{}s",
                 }
             },
         },

@@ -418,8 +418,8 @@ return {
             j_rndmod_jackpot={
                 name="Jackpot",
                 text={
-                    "Gain {C:money}$#1#{} if the scoring hand",
-                    "contains {C:attention}3 7s{}",
+                    "Gain {C:money}$#1#{} if the scoring",
+                    "hand contains 3 {C:attention}7{}s",
                 }
             },
         },
