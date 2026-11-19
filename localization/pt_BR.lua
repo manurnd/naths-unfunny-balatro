@@ -583,7 +583,7 @@ return {
             stake_rndmod_2cobalt={
                 name="Aposta De Cobalto",
                 text={
-                    "{C:greend}Rerolls{} começam em {C:attention}$7{}",
+                    "{C:greend}Rerolls{} aumentam em {C:attention}$2{}",
                 },
             },
             stake_rndmod_3ancient={

@@ -587,7 +587,7 @@ return {
             stake_rndmod_2cobalt={
                 name="Cobalt Stake",
                 text={
-                    "{C:greend}Rerolls{} start at {C:attention}$7{}",
+                    "{C:greend}Rerolls{} scale by {C:attention}$2{}",
                 },
             },
             stake_rndmod_3ancient={
