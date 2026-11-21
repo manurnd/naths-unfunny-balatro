@@ -3,12 +3,12 @@
 <p>Just a little mod for Balatro that I've decided to spend some of my free time into.</p><hr>
 <p>This mod currently adds:</p>
 <ul>
-  <li>36 New Jokers</li>
-  <li>6 New Tarot Cards</li>
+  <li>40 New Jokers</li>
+  <li>8 New Tarot Cards</li>
   <li>7 New Planets</li>
   <li>4 New Enhancements</li>
   <li>6 New Seals</li>
-  <li>4 New Decks</li>
-  <li>4 New Stakes</li>
+  <li>6 New Decks</li>
+  <li>3 New Stakes</li>
   <li>6 New Hand Types</li>
 </ul>
