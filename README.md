@@ -9,6 +9,6 @@
   <li>4 New Enhancements</li>
   <li>6 New Seals</li>
   <li>6 New Decks</li>
-  <li>3 New Stakes</li>
+  <li>4 New Stakes</li>
   <li>6 New Hand Types</li>
 </ul>
