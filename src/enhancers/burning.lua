@@ -15,7 +15,7 @@ SMODS.Enhancement {
                 vars = {
                     card.ability.mult,
                     card.ability.extra.gain * 1.5,
-                    card.ability.extra.destroy * 2
+                    card.ability.extra.destroy * 2.5
                 }
             }
         else
@@ -41,7 +41,7 @@ SMODS.Enhancement {
       
         if context.final_scoring_step then
             if next(SMODS.find_card("j_rndmod_scorching")) and
-            card.ability.mult >= (card.ability.extra.destroy * 2) and
+            card.ability.mult >= (card.ability.extra.destroy * 2.5) and
             context.cardarea == G.play then
                 SMODS.destroy_cards(card)
             elseif not next(SMODS.find_card("j_rndmod_scorching")) and

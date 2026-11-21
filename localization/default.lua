@@ -34,6 +34,22 @@ return {
                     "gaining a copy of it"
                 },
             },
+            b_rndmod_cherry = {
+                name = "Cherry Deck",
+                text = {
+                    "{C:green}Uncommon{} and",
+                    "{C:red}Rare{} {C:attention}Jokers{}",
+                    "appear more often in shop",
+                    "{C:attention}-1{} joker slot",
+                },
+            },
+            b_rndmod_chaos = {
+                name = "Chaotic Deck",
+                text = {
+                    "Values are swapped around",
+                    "Randomizes deck cards",
+                },
+            },
         },
         Joker = {
             j_rndmod_modern_hermit = {
@@ -422,6 +438,19 @@ return {
                     "hand contains 3 {C:attention}7{}s",
                 }
             },
+            j_rndmod_forbidden={
+                name="Forbidden Joker",
+                text={
+                    {
+                        "{X:mult,C:white} X#1# {} Mult",
+                    },
+                    {
+                        "All scoring cards are",
+                        "{C:attention}debuffed{}",
+                        "when played"
+                    }
+                }
+            },
         },
         Tarot = {
             c_rndmod_eclipse={
@@ -438,6 +467,13 @@ return {
                     "Converts up to {C:attention}#1#{}",
                     "selected cards into",
                     "{C:attention}Greedy Cards"
+                },
+            },
+            c_rndmod_lust={
+                name="The Lust",
+                text={
+                    "Decreases the rank of",
+                    "up to {C:attention}#1#{} selected cards",
                 },
             },
             c_rndmod_glut={
@@ -472,6 +508,14 @@ return {
                     "Converts up to {C:attention}#1#{}",
                     "selected cards into",
                     "{C:attention}Slothful Cards"
+                },
+            },
+            c_rndmod_angel={
+                name="The Angel",
+                text={
+                    "Converts up to {C:attention}#1#{}",
+                    "selected cards into",
+                    "{C:attention}Prideful Cards"
                 },
             },
         },
@@ -576,6 +620,14 @@ return {
                     "in your full deck",
                 },
             },
+            m_rndmod_pride={
+                name="Prideful Card",
+                text={
+                    "This card is",
+                    "considered a",
+                    "{C:attention}face{} card",
+                },
+            },
         },
         Stake={
             stake_rndmod_1negative={
@@ -587,7 +639,7 @@ return {
             stake_rndmod_2cobalt={
                 name="Cobalt Stake",
                 text={
-                    "{C:greend}Rerolls{} scale by {C:attention}$2{}",
+                    "{C:greend}Rerolls{} start at {C:attention}$7{}",
                 },
             },
             stake_rndmod_3ancient={
@@ -598,7 +650,7 @@ return {
                 },
             },
             stake_rndmod_4itaborailson={
-                name="Itaborailson Stake",
+                name="Pink Stake",
                 text={
                     "Half of items are banned from the shop",
                 },

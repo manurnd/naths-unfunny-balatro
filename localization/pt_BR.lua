@@ -34,6 +34,22 @@ return {
                     "de ganhar uma cópia dele"
                 },
             },
+            b_rndmod_cherry = {
+                name = "Baralho de Cereja",
+                text = {
+                    "{C:attention}Curingas{} {C:green}Incomuns{} e",
+                    "{C:red}Raros{} aparecem mais",
+                    "frequentemente na loja",
+                    "{C:attention}-1{} espaço de curinga",
+                },
+            },
+            b_rndmod_chaos = {
+                name = "Baralho Caótico",
+                text = {
+                    "Valores são trocados",
+                    "Randomiza cartas do baralho",
+                },
+            },
         },
         Joker = {
             j_rndmod_modern_hermit = {
@@ -419,6 +435,18 @@ return {
                     "pontuada contém 3 {C:attention}7{}s",
                 }
             },
+            j_rndmod_forbidden={
+                name="Proibido",
+                text={
+                    {
+                        "{X:mult,C:white} X#1# {} Multi",
+                    },
+                    {
+                        "Cartas pontuadas sofrem",
+                        "{C:attention}Desvantagem{}",
+                    }
+                }
+            },
         },
         Tarot = {
             c_rndmod_eclipse={
@@ -427,6 +455,13 @@ return {
                     "Converte até {C:attention}#1#{} cartas",
                     "selecionadas em",
                     "{C:attention}Cartas Em Chamas"
+                },
+            },
+            c_rndmod_lust={
+                name="A Luxúria",
+                text={
+                    "Diminui a classe de",
+                    "até {C:attention}#1#{} cartas selecionadas",
                 },
             },
             c_rndmod_cage={
@@ -469,6 +504,14 @@ return {
                     "Converte até {C:attention}#1#{} cartas",
                     "selecionadas em",
                     "{C:attention}Cartas Preguiçosas"
+                },
+            },
+            c_rndmod_angel={
+                name="O Anjo",
+                text={
+                    "Converte até {C:attention}#1#{} cartas",
+                    "selecionadas em",
+                    "{C:attention}Cartas Orgulhosas"
                 },
             },
         },
@@ -572,6 +615,14 @@ return {
                     "no seu deck completo",
                 },
             },
+            m_rndmod_pride={
+                name="Carta Orgulhosa",
+                text={
+                    "Esta carta é",
+                    "considerada como",
+                    "uma carta de {C:attention}realeza{}",
+                },
+            },
         },
         Stake={
             stake_rndmod_1negative={
@@ -583,7 +634,7 @@ return {
             stake_rndmod_2cobalt={
                 name="Aposta De Cobalto",
                 text={
-                    "{C:greend}Rerolls{} aumentam em {C:attention}$2{}",
+                    "{C:greend}Rerolls{} começam em {C:attention}$7{}",
                 },
             },
             stake_rndmod_3ancient={
@@ -594,7 +645,7 @@ return {
                 },
             },
             stake_rndmod_4itaborailson={
-                name="Aposta Itaborailson",
+                name="Aposta Rosa",
                 text={
                     "Metade dos itens estão banidos da loja",
                 },
