@@ -23,7 +23,9 @@ SMODS.Back {
             G.GAME.starting_params.consumable_slots or 2,
             G.GAME.starting_params.dollars or 4,
             G.GAME.modifiers.money_per_hand or 1,
-            1 or G.GAME.modifiers.money_per_discard,
+            1, -- money per discard
+            2, -- default shop size
+            2, -- booster amount in shop
         }
 
         local shuffledList = {}
@@ -40,5 +42,7 @@ SMODS.Back {
         G.GAME.starting_params.dollars = shuffledList[6]
         G.GAME.modifiers.money_per_hand = shuffledList[7]
         G.GAME.modifiers.money_per_discard = shuffledList[8]
+        change_shop_size(math.max(shuffledList[9]-2, -1))
+        SMODS.change_booster_limit(math.max(shuffledList[10]-2, -1))
     end
 }
