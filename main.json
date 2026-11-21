@@ -6,5 +6,5 @@
   "prefix": "rndmod",
   "main_file": "main.lua",
   "icon_path": "icon.png",
-  "version": "0.0.1"
+  "version": "1.0.0"
 }
