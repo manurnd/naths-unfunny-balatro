@@ -5,7 +5,7 @@ SMODS.Joker {
     config = {
         extra = {
             new_grow = 6,
-            new_burn = 24
+            new_burn = 30
         }
     },
     rarity = 2,

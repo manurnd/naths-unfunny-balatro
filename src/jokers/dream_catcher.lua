@@ -4,7 +4,7 @@ SMODS.Joker {
     pos = { x = 5, y = 1},
     config = {
         extra = {
-            xMult = 0.2
+            xMult = 0.25
         }
     },
     rarity = 2,

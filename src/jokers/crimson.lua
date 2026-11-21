@@ -6,7 +6,7 @@ SMODS.Joker {
     pixel_size = { w = 71, h = 71 },
     config = {
         extra = {
-            increase = 0.2,
+            increase = 0.25,
             mult = 1.0
         },
     },
@@ -32,7 +32,9 @@ SMODS.Joker {
 
         if context.joker_main then
             local newMult = card.ability.extra.mult
-            card.ability.extra.mult = 1.0
+            if not context.blueprint then
+                card.ability.extra.mult = 1.0
+            end
             return {xmult = newMult} 
         end
     end
