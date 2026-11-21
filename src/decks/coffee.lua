@@ -27,7 +27,7 @@ SMODS.Back {
     end,
     
     calculate = function(self, back, context)
-         if context.using_consumeable then
+         if context.using_consumeable and not context.consumeable.config.center_key == 'c_soul' then
             if pseudorandom('coffeeD'..G.GAME.round_resets.ante) < G.GAME.probabilities.normal/back.effect.config.extra.chance then
             SMODS.add_card({key = context.consumeable.config.center_key})
             end

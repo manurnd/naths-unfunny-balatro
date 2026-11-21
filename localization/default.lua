@@ -403,7 +403,7 @@ return {
             j_rndmod_crimson={
                 name="Crimson King",
                 text={
-                    "Gains {X:mult,C:white} X#2# {} Mult when",
+                    "Gains {X:mult,C:white} X#1# {} Mult when",
                     "a {C:attention}King{} is scored",
                     "Resets when activated",
                     "{C:inactive}(Currently {X:mult,C:white} X#2# {C:inactive} Mult)",
