@@ -33,10 +33,8 @@ SMODS.Stake {
   },
   shiny = true,
   colour = HEX("0000ff"),
-  calculate = function(self, context)
-    if context.setting_blind and G.GAME.round == 1 then
-      G.GAME.current_round.reroll_cost_increase = (G.GAME.current_round.reroll_cost_increase or 0) + 1
-    end
+  modifiers = function()
+    G.GAME.starting_params.reroll_cost = G.GAME.starting_params.reroll_cost + 2
   end
 }
 
@@ -79,8 +77,8 @@ SMODS.Stake {
     above_stake = false,
     applied_stakes = false
   },
-  shiny = false,
-  colour = HEX("2596be"),
+  shiny = true,
+  colour = HEX("ff45e9"),
   modifiers = function()
     for k, v in pairs(G.P_CENTER_POOLS.Consumeables) do
       if pseudorandom('itaborailson') < 1/2 and k ~= "Back" and
