@@ -12,3 +12,5 @@
   <li>4 New Stakes</li>
   <li>6 New Hand Types</li>
 </ul>
+
+<p>This mod requires Steamodded!!</p>
